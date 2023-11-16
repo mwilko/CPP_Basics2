@@ -16,11 +16,11 @@ using namespace std;
 class A//class which holds corresponding class declarations
 {
 private://only accessable by this 'A' class
-    string rawInput;//variable to save given name to object
+    string _rawInput;//variable to save given name to object
 
 public://accessable outside of the class
     A(const char name);
-    A(const string& rawInput);//copy constructor which takes in string parameter
+    A(const string& input);//copy constructor which takes in string parameter
 
 
     void setName(string newInput);//changes name of a variable

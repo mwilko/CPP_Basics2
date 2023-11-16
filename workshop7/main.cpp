@@ -17,6 +17,7 @@ int main() //main function, entry of c++ programs
     //member access, -> is for a pointer
     a1->setName("IamA");//set name of a1 to 'IAmA'
     A a2 = *a1;// A object 'a2' is set to the value of pointer object 'a1'
+    a2 = *a1;
     delete a1;//calls deconstructor and deletes object 'a1'
     
     //member access with '.' used with objects
