@@ -19,7 +19,8 @@ private://only accessable by this 'A' class
     string rawInput;//variable to save given name to object
 
 public://accessable outside of the class
-    A(const string& rawInput);//constructor which takes in string parameter
+    A(const char name);
+    A(const string& rawInput);//copy constructor which takes in string parameter
 
 
     void setName(string newInput);//changes name of a variable

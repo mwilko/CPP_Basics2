@@ -10,9 +10,12 @@
 
 //scope resolution operator (::), shows what class the
 //  constructor and methods belong to
-
-A::A(const string& newName) : rawInput(newName)//constructor which takes in string parameter
+A::A(const char name){
+    cout << "base constructor initialised ..." << endl;
+}
+A::A(const string& newName) : rawInput(newName)//copy constructor which takes in string parameter
 {
+    cout << "copy constructor initialised ..." << endl;
     cout << "class initialised, A object, parameter (" << &rawInput << ") ..." << endl;
 };
 void A::setName(string newName)//method which sets name of given variable to parameter
